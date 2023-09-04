@@ -22,6 +22,13 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     Unity.Timeline.Editor.dll:
     - TimelineProjectSettings
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -140,23 +147,33 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 2586}
+    - Class: 114
       Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 5744}
+      Script: {instanceID: 5746}
+    - Class: 114
+      Script: {instanceID: 6014}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -206,23 +223,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4054}
     - Class: 114
-      Script: {instanceID: 4302}
+      Script: {instanceID: 4280}
     - Class: 114
-      Script: {instanceID: 4886}
+      Script: {instanceID: 4304}
     - Class: 114
-      Script: {instanceID: 5006}
+      Script: {instanceID: 4888}
     - Class: 114
-      Script: {instanceID: 5550}
+      Script: {instanceID: 5008}
     - Class: 114
-      Script: {instanceID: 5698}
+      Script: {instanceID: 5552}
     - Class: 114
-      Script: {instanceID: 6012}
+      Script: {instanceID: 5700}
     - Class: 114
-      Script: {instanceID: 6020}
+      Script: {instanceID: 6014}
     - Class: 114
-      Script: {instanceID: 7046}
+      Script: {instanceID: 6022}
     - Class: 114
-      Script: {instanceID: 38444}
+      Script: {instanceID: 7048}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -714,6 +731,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: e3c6c38132eba7ca7067c13443b133c5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Game
   - hash:
       serializedVersion: 2
       Hash: fcc569162a8d9bd9df34e8c9dee84212
@@ -1290,12 +1313,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 34d1cd5d8feb5cff361c6a348b23c2eb
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Game
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity

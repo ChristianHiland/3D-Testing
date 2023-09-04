@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Menu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Wolf Colors
+    icon: {fileID: 2800000, guid: bf6af869320aae4419b150688d318cc9, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: 360c9468f36f7cc40bf37a6ffe0226aa, type: 2}
+    subParameters: []
+    labels: []
+  - name: Regular Colors
+    icon: {fileID: 2800000, guid: c058e563503320245841f68c104c5aae, type: 3}
+    type: 103
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 11400000, guid: a19064ffa7704f74c906b2e4650ed0b1, type: 2}
+    subParameters: []
+    labels: []

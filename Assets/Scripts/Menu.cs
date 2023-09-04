@@ -8,7 +8,7 @@ using TMPro;
 
 public class Menu : MonoBehaviour
 {
-    public TMPro.TMP_Dropdown LanguageDrop;
+    public TMP_Dropdown LanguageDrop;
     // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
     public void Play()
     {
