@@ -1,40 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
+using System.IO;
+using TMPro;
 
 public class Menu : MonoBehaviour
 {
-    // The Exit Button
-    public Button Quit;
-    public GameObject QuitButton;
- 
-    // Start is called before the first frame update
-    void Start()
+    public TMPro.TMP_Dropdown LanguageDrop;
+    // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
+    public void Play()
     {
-        // Start the game without the Menu elements
-        Quit.interactable = false;
-        // Keeps track on if the user pressed the Quit Button, and if they did then run OnClickHandler.
-        Quit.onClick.AddListener(QuitHandler);
+        // Once the player hits Play, it will switch to Scene 1 (The Game Scene)
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    // Runs when the button Quit has been pressed.
-    void QuitHandler()
+    // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
+    public void Save()
+    {
+        int LanguageSetNew = LanguageDrop.value;
+        SaveObject saveObject = new SaveObject
+        {
+            LanguageSet = LanguageSetNew,
+        };
+        string json = JsonUtility.ToJson(saveObject);
+        File.WriteAllText("Assets/Data/Settings.json", json);
+        Debug.Log("Language Has Been Changed To " + LanguageSetNew);
+
+    }
+    // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
+    public void Quit()
     {
         Application.Quit();
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.ExitPlaymode();
-#endif
     }
-
-    // Update is called once per frame.
-    void Update()
-    {
-        // Check if the user pressed the Q was pressed, and if it was then show the menu.
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            // Toggle the visibility of the UI element
-            QuitButton.SetActive(!QuitButton.activeSelf);
-            Quit.interactable = !Quit.interactable;
-        }
+    private class SaveObject {
+        public int LanguageSet;
     }
 }
