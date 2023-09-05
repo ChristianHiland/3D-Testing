@@ -13,6 +13,8 @@ public class Loading : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Checking the game language.
+        Language();
         // Once the player hits Play, it will switch to Scene 2 (The Game Scene)
         SceneManager.LoadScene("Main");
 

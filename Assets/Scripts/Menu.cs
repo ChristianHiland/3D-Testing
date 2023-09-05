@@ -33,6 +33,10 @@ public class Menu : MonoBehaviour
     {
         Application.Quit();
     }
+    private void Update()
+    {
+        
+    }
     private class SaveObject {
         public int LanguageSet;
     }

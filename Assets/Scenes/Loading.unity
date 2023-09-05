@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 713874108}
   - component: {fileID: 713874107}
   m_Layer: 5
-  m_Name: GameTitle
+  m_Name: LoadingTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -734,6 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11975747efe91749af2d4f19d9949e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadingText: {fileID: 713874107}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
