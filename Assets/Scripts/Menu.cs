@@ -12,7 +12,7 @@ public class Menu : MonoBehaviour
     // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
     public void Play()
     {
-        // Once the player hits Play, it will switch to Scene 1 (The Game Scene)
+        // Once the player hits Play, it will switch to Scene 1 (The Loading Scene)
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
