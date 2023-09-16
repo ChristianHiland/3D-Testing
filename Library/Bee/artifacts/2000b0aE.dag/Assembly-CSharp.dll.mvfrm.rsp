@@ -2,6 +2,8 @@ Library\Bee\artifacts\mvdfrm\Unity.EditorCoroutines.Editor.ref.dll_63B9EB35A0645
 Library\Bee\artifacts\mvdfrm\Unity.Performance.Profile-Analyzer.Editor.ref.dll_C0422B8CE3C1BDD1.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.PlasticSCM.Editor.ref.dll_9B6D9940AFF80C3C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Rider.Editor.ref.dll_BB682F4C994978A9.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Sysroot.Linux_x86_64.ref.dll_37DB98B07DDE4079.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.SysrootPackage.Editor.ref.dll_9E0122523FBA1972.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.ref.dll_A9B4CA1AA14E26F9.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.ref.dll_C83781DD64A29266.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.TestTools.CodeCoverage.Editor.ref.dll_33A4BA77A8412D3F.mvfrm
@@ -9,6 +11,7 @@ Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.Editor.ref.dll_E01181B6C057CE40.m
 Library\Bee\artifacts\mvdfrm\Unity.TextMeshPro.ref.dll_3701448EC0EF5C81.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Timeline.Editor.ref.dll_05875DFCD7CD8938.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.Timeline.ref.dll_D34675E5055C5209.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Toolchain.Win-x86_64-Linux-x86_64.ref.dll_BCAA9FBF948D0DCE.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VSCode.Editor.ref.dll_CF19E61DDF16767F.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Core.Editor.ref.dll_83BC621B72BABDA3.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Core.ref.dll_EA71DBF61AC412EE.mvfrm
@@ -100,5 +103,8 @@ Library\Bee\artifacts\mvdfrm\UnityEngine.VideoModule.dll_78385F41B4D4BEC6.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.VRModule.dll_E91BE542D24743C5.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WindModule.dll_C11B859F2DFACF81.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.XRModule.dll_1BDAA8475B819123.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.Gradle.dll_45CC4DC3C33D2655.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.GradleProject.dll_C8620E7AE50285B0.mvfrm
+Library\Bee\artifacts\mvdfrm\Unity.Android.Types.dll_95738F867D83F4B7.mvfrm
 Library\Bee\artifacts\mvdfrm\UnityEngine.WebGLModule.dll_D149AF9ACB5EA21C.mvfrm
 Library\Bee\artifacts\mvdfrm\Unity.VisualScripting.Antlr3.Runtime.dll_2521796BDD14ED74.mvfrm

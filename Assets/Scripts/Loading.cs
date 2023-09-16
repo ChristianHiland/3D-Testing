@@ -10,13 +10,16 @@ public class Loading : MonoBehaviour
 {
     // Text
     public TMP_Text LoadingText;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Once the player hits Play, it will switch to Scene 2 (The Game Scene)
+        SceneManager.LoadScene("TestMap");
+        // Stoping the Main Menu Music.
+        FindObjectOfType<AudioManger>().Stop("MainTheme");
         // Checking the game language.
         Language();
-        // Once the player hits Play, it will switch to Scene 2 (The Game Scene)
-        SceneManager.LoadScene("Main");
 
     }
     void Language()
@@ -34,6 +37,7 @@ public class Loading : MonoBehaviour
             LoadingText.text = "지금 로드 중...";
         }
     }
+
     private class SaveObject
     {
         public int LanguageSet;

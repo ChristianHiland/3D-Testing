@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManger
     - Game
     - GameMain
     - Loading
@@ -38,6 +39,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
   serializedClasses:
     Assembly-CSharp:
+    - Sound
     - UnityStandardAssets.Characters.FirstPerson.MouseLook
     - UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController/AdvancedSettings
     - UnityStandardAssets.Characters.FirstPerson.RigidbodyFirstPersonController/MovementSettings
@@ -82,6 +84,15 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: Save
+  - assembly: Assembly-CSharp
+    fullTypeName: Menu
+    methodName: HouseMap
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: UnityEngine.CoreModule
     fullTypeName: UnityEngine.GameObject
     methodName: SetActive
@@ -100,76 +111,29 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: Quit
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: Menu
-    methodName: Play
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
-  - assembly: UnityEngine.CoreModule
-    fullTypeName: UnityEngine.GameObject
-    methodName: SetActive
+    methodName: TestingMap
   sceneClasses:
-    Assets/Scenes/Loading.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1606}
-    - Class: 114
-      Script: {instanceID: 2602}
-    - Class: 114
-      Script: {instanceID: 2802}
-    - Class: 114
-      Script: {instanceID: 5024}
-    - Class: 114
-      Script: {instanceID: 5058}
-    - Class: 114
-      Script: {instanceID: 5570}
-    - Class: 114
-      Script: {instanceID: 5718}
-    - Class: 114
-      Script: {instanceID: 6032}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Main.unity:
+    Assets/Scenes/House.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -192,37 +156,88 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 0}
+      Script: {instanceID: 16658}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 18864}
     - Class: 114
-      Script: {instanceID: 3808}
-    - Class: 114
-      Script: {instanceID: 5764}
-    - Class: 114
-      Script: {instanceID: 6032}
+      Script: {instanceID: 20824}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
-    - Class: 137
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/Loading.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16652}
+    - Class: 114
+      Script: {instanceID: 16658}
+    - Class: 114
+      Script: {instanceID: 17658}
+    - Class: 114
+      Script: {instanceID: 17858}
+    - Class: 114
+      Script: {instanceID: 20082}
+    - Class: 114
+      Script: {instanceID: 20116}
+    - Class: 114
+      Script: {instanceID: 20628}
+    - Class: 114
+      Script: {instanceID: 20778}
+    - Class: 114
+      Script: {instanceID: 21092}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -241,6 +256,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -248,43 +265,45 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1606}
+      Script: {instanceID: 16652}
     - Class: 114
-      Script: {instanceID: 2186}
+      Script: {instanceID: 16658}
     - Class: 114
-      Script: {instanceID: 2432}
+      Script: {instanceID: 17242}
     - Class: 114
-      Script: {instanceID: 2602}
+      Script: {instanceID: 17488}
     - Class: 114
-      Script: {instanceID: 2608}
+      Script: {instanceID: 17658}
     - Class: 114
-      Script: {instanceID: 2802}
+      Script: {instanceID: 17664}
     - Class: 114
-      Script: {instanceID: 3084}
+      Script: {instanceID: 17858}
     - Class: 114
-      Script: {instanceID: 3844}
+      Script: {instanceID: 18140}
     - Class: 114
-      Script: {instanceID: 3962}
+      Script: {instanceID: 18900}
     - Class: 114
-      Script: {instanceID: 4070}
+      Script: {instanceID: 19020}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 19128}
     - Class: 114
-      Script: {instanceID: 4320}
+      Script: {instanceID: 19354}
     - Class: 114
-      Script: {instanceID: 4904}
+      Script: {instanceID: 19378}
     - Class: 114
-      Script: {instanceID: 5024}
+      Script: {instanceID: 19962}
     - Class: 114
-      Script: {instanceID: 5570}
+      Script: {instanceID: 20082}
     - Class: 114
-      Script: {instanceID: 5718}
+      Script: {instanceID: 20628}
     - Class: 114
-      Script: {instanceID: 6032}
+      Script: {instanceID: 20778}
     - Class: 114
-      Script: {instanceID: 6040}
+      Script: {instanceID: 21092}
     - Class: 114
-      Script: {instanceID: 7066}
+      Script: {instanceID: 21100}
+    - Class: 114
+      Script: {instanceID: 22130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -300,6 +319,67 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/TestMap.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16658}
+    - Class: 114
+      Script: {instanceID: 17658}
+    - Class: 114
+      Script: {instanceID: 18864}
+    - Class: 114
+      Script: {instanceID: 20824}
+    - Class: 114
+      Script: {instanceID: 21092}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 124
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -320,6 +400,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: a9b87b6bd25090a029fe2c2f5b6b830c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManger
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1364,9 +1450,16 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LoadMaps
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Loading.unity
-  - Assets/Scenes/Main.unity
-  playerPath: C:/Users/1005909/3D Testing/Build/3D Testing.exe
+  - Assets/Scenes/TestMap.unity
+  - Assets/Scenes/House.unity
+  playerPath: C:/Users/1005909/3D Testing/Builds/WindowBuild/3D Testing.exe

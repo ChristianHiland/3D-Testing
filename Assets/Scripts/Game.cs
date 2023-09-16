@@ -27,6 +27,9 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Playing the Main Menu Theme
+        FindObjectOfType<AudioManger>().Play("MainTheme");
+        // Checking all the languages.
         LoadLanguage();
     }
     void LoadLanguage()
@@ -41,7 +44,7 @@ public class Game : MonoBehaviour
             LanguageText.text = "Language";
             AboutTitle.text = "About";
             // Buttons
-            PlayButton.text = "Play";
+            PlayButton.text = "Start";
             SettingButton.text = "Settings";
             AboutButton.text = "About";
             QuitButton.text = "Quit";

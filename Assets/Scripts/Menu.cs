@@ -12,8 +12,18 @@ public class Menu : MonoBehaviour
     // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
     public void Play()
     {
+        
+    }
+    // Loading the Testing Map.
+    public void TestingMap()
+    {
         // Once the player hits Play, it will switch to Scene 1 (The Loading Scene)
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    // Loading the House Map.
+    public void HouseMap()
+    {
+        SceneManager.LoadScene("House");
     }
     // This is runned by Unity when the button is pressed, using the inbuilt onClick Func.
     public void Save()
@@ -32,10 +42,6 @@ public class Menu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
-    }
-    private void Update()
-    {
-        
     }
     private class SaveObject {
         public int LanguageSet;

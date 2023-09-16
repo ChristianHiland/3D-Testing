@@ -62,7 +62,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
-                PlayLandingSound();
                 m_MoveDir.y = 0f;
                 m_Jumping = false;
             }
