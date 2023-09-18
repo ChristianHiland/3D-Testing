@@ -1,5 +1,7 @@
-using System;
+using UnityEngine.InputSystem;
 using UnityEngine;
+using System;
+
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
